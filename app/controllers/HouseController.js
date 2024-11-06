@@ -2,8 +2,10 @@ import { AppState } from "../AppState.js";
 import { houseService } from "../services/HouseService.js";
 
 export class HouseController {
+
     constructor() {
         console.log('TIME TO START SELLING HOUSES');
+        this.drawHouses()
         AppState.on('houses', this.drawHouses)
         houseService.loadHouses()
     }
