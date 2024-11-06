@@ -37,7 +37,7 @@ export class Car {
                ${this.FormattedTime}
              </p>
              <div>
-              <button onclick="app.CarsController.deleteCarListing('${this.id}')" class="btn btn-danger w-100" title="Delete ${this.make} ${this.model}"><i class="mdi mdi-delete-empty"></i></button>
+              <button onclick="carsApp.CarsController.deleteCarListing('${this.id}')" class="btn btn-danger w-100" title="Delete ${this.make} ${this.model}"><i class="mdi mdi-delete-empty"></i></button>
              </div>
            </div>
          </div>

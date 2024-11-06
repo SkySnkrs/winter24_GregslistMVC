@@ -23,6 +23,11 @@
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
         <span class="ml-2">gregslistmvc</span>
+        <div>
+          <a class="fw-bold btn btn-light m-2 selected" href="index.html">List Car</a>
+          <a class="fw-bold btn btn-light m-2" href="ListHouses.html">List House</a>
+          <a class="fw-bold btn btn-light m-2" href="listJobs.html">List Jobs</a>
+        </div>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +59,8 @@
 
     <!-- --- -->
     <!-- SECTION car form -->
-    <form onsubmit="app.CarsController.createCarListing()" class="row g-4 bg-white p-4 rounded shadow-sm my-3">
+    <form id="Car-Form" onsubmit="carsApp.CarsController.createCarListing()"
+      class="row g-4 bg-white p-4 rounded shadow-sm my-3">
       <div>
         <h2>List Your Car</h2>
       </div>
@@ -129,7 +135,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
     integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
 
-  <script src="app/App.js" type="module"></script>
+  <script src="app/CarsApp.js" type="module"></script>
 </body>
 
 </html>
